@@ -1,0 +1,15 @@
+current directory: /Users/hirotoshi/Desktop/blog/pf/vender/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/ext/bootsnap
+/Users/hirotoshi/.rbenv/versions/2.6.6/bin/ruby -I /Users/hirotoshi/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200517-48850-uzqvpi.rb extconf.rb
+creating Makefile
+
+current directory: /Users/hirotoshi/Desktop/blog/pf/vender/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/hirotoshi/Desktop/blog/pf/vender/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/hirotoshi/Desktop/blog/pf/vender/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20200517-48850-8nqgfk/bootsnap

@@ -1,0 +1,16 @@
+current directory: /Users/hirotoshi/Desktop/dev/blog/vender/bundle/ruby/2.6.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+/Users/hirotoshi/.rbenv/versions/2.6.6/bin/ruby -I /Users/hirotoshi/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200520-1727-19v6fbp.rb extconf.rb
+
+current directory: /Users/hirotoshi/Desktop/dev/blog/vender/bundle/ruby/2.6.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR=" clean
+make: *** No rule to make target `clean'.  Stop.
+
+current directory: /Users/hirotoshi/Desktop/dev/blog/vender/bundle/ruby/2.6.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR="
+echo "Nada."
+Nada.
+
+current directory: /Users/hirotoshi/Desktop/dev/blog/vender/bundle/ruby/2.6.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR=" install
+echo "Nada."
+Nada.

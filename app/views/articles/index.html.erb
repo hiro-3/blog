@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="text-center">articles</h1>
+  <% @articles.each do |article| %>
+   <%= link_to article do%>
+    <div class="article-main text-center col-md-4 offset-md-4 bg-white border border-dark">
+      <%= image_tag "0057.jpeg", class: "img-responsive, w-100"%>
+      <%= article.title %>
+      <span><%= article.created_at.strftime('%Y年%m月%d日') %></span>
+    </div>
+   <% end %>
+  <% end %>
+</div>

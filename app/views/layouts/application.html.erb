@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html　lang="ja">
   <head>
-    <title>Blog</title>
-    <mata charset = "utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+   <title>Blog</title>
+   <mata charset = "utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="https://kit.fontawesome.com/ee66e115f8.js" crossorigin="anonymous"></script>
+   <%= csrf_meta_tags %>　
+   <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+   <script src="https://kit.fontawesome.com/ee66e115f8.js" crossorigin="anonymous"></script>
 
-  <body>
-    <header class="header">
-      <nav class="navbar navbar-expand-sm navbar-dark bg-white mt-3 mb-3">
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false" aria-label="ナビゲーションの切替">
-         <span class="navbar-toggler-icon"></span>
-        </button>
-        <span class="navbar-brand">AAA</span>
+   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+ </head>
+
+ <body>
+   <header class="header">
+     <nav class="navbar navbar-expand-sm navbar-dark bg-white mt-3 mb-3">
+       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false" aria-label="ナビゲーションの切替">
+        <span class="navbar-toggler-icon"></span>
+       </button>
+       <span class="navbar-brand text-dark">AAA</span>
         <div class="collapse navbar-collapse " id="Navber">
            <ul class="navbar-nav mr-auto">
                <li class="nav-item active"><i class="fas fa-house-user"></i><%= link_to "Home", root_path, class:"p-2 text-dark "%></li>
@@ -32,6 +33,12 @@
         </div>
       </nav>
     </header>
+    <footer class="footer" >
+      <div class="d-flex flex-column align-items-center p-3 px-md-4  bg-white border-bottom shadow-sm fixed-bottom text-center">
+       <span>
+		      <small class="text-muted">© 2020</small>
+		   </span>
+    </footer>
     <%= yield %>
   </body>
 </html>

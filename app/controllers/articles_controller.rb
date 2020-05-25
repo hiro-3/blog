@@ -1,10 +1,12 @@
 class ArticlesController < ApplicationController
 
   def index
-    @article = Articles.all
+    #binding.pry
+    @articles = Article.order(created_at: :desc)
   end
 
   def new
-    @articles = Articles.new
+    @articles = Article.new
   end
+
 end

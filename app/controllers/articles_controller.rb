@@ -18,6 +18,7 @@ class ArticlesController < ApplicationController
       redirect_to @articles, notice:"作成完了"
     else
       render :new, alert:"作成失敗"
+    end
   end
 
   def edit
@@ -28,6 +29,7 @@ class ArticlesController < ApplicationController
       redirect_to @article, notice:"更新完了"
     else
       render :edit, alert:"更新失敗"
+    end
   end
 
   def destroy
@@ -35,6 +37,7 @@ class ArticlesController < ApplicationController
       redirect_to root_path, notice:"削除完了"
     else
       render  root_path, alrert:"削除失敗"
+    end   
   end
 
   private

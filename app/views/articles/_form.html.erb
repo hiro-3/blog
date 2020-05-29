@@ -1,0 +1,14 @@
+<div class="article-main text-center col-md-12 bg-white border border-dark">
+  <%= image_tag "105.jpeg", class: "img-responsive, w-100", style:"padding: 15px;"%>
+  <%= form_for articles do |f| %>
+   <div class="form-group">
+    <%= f.label :title, "タイトル"%>
+    <%= f.text_field :title, class:"form-control" %>
+   </div>
+   <div class="form-group">
+    <%= f.label :content, "本文"%>　
+    <%= f.text_area :content, rows: 10, class:"form-control" %>
+   </div>
+　  <%= f.submit class:"btn btn-success" %>
+  <% end %>
+</div>

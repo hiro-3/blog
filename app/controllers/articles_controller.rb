@@ -13,7 +13,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @articles = Articles.new(article_params)
+    @articles = Article.new(article_params)
     if @articles.save
       redirect_to @articles, notice:"作成完了"
     else
@@ -37,7 +37,7 @@ class ArticlesController < ApplicationController
       redirect_to root_path, notice:"削除完了"
     else
       render  root_path, alrert:"削除失敗"
-    end   
+    end
   end
 
   private
@@ -46,6 +46,6 @@ class ArticlesController < ApplicationController
     end
 
     def article_params
-       params.require(:article).permit(:title,:content)
+       params.require(:article).permit(:title,:content,:created_at)
     end
 end

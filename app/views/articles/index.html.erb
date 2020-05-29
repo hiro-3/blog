@@ -1,12 +1,13 @@
 <div class="container">
+  <%= link_to "新規作成", new_article_path, class:"margin-top-5per btn btn-primary" %>
   <h1 class="text-center">articles</h1>
   <% @articles.each do |article| %>
-   <%#= link_to article do%>
     <div class="article-main text-center col-md-4 offset-md-4 bg-white border border-dark">
-      <%= image_tag "105.jpeg", class: "img-responsive, w-100", style:"padding: 15px;"%>
       <%= article.title %>
       <span><%= article.created_at.strftime('%Y年%m月%d日') %></span>
+      <%= link_to article do %>
+       <%= image_tag "105.jpeg", class: "img-responsive, w-100", style:"padding: 15px;"%>
+      <% end %>
     </div>
-   <%# end %>
   <% end %>
 </div>

@@ -2,6 +2,7 @@
     <div class="article-main text-center col-md-12 bg-white border border-dark">
       <h1 class="text-center"><%= @articles.title %></h1>
       <%= image_tag "105.jpeg", class: "img-responsive, w-100", style:"padding: 15px;"%>
+      <%= image_tag @articles.image.url, class: "img-responsive, w-100", style:"padding: 15px;"%>
       <span><%= @articles.created_at.strftime('%Y年%m月%d日') %></span>
     </div>
     <%= link_to "編集", edit_article_path(@articles), class:"btn btn-primary" %>

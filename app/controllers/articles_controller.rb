@@ -13,6 +13,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    #binding.pry
     @articles = Article.new(article_params)
     if @articles.save
       redirect_to @articles, notice:"作成完了"
@@ -46,6 +47,6 @@ class ArticlesController < ApplicationController
     end
 
     def article_params
-       params.require(:article).permit(:title,:content,:created_at)
+       params.require(:article).permit(:title,:content, :image, :created_at)
     end
 end

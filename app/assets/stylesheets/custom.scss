@@ -1,6 +1,27 @@
 body{
   background-color: #e6e7ea;
 }
+
 .article-main{
   margin-top: 30px;
+}
+
+#cover-img{
+  cursor: pointer;
+}
+
+.relative{
+  position: relative;
+
+  i{
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    font-size: 50px;
+    color: white;
+  }
+}
+
+#article_image{
+  display: none;
 }

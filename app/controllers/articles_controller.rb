@@ -23,11 +23,12 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+    #binding.pry
   end
 
   def update
     if @articles.update(article_params)
-      redirect_to @article, notice:"更新完了"
+      redirect_to @articles, notice:"更新完了"
     else
       render :edit, alert:"更新失敗"
     end

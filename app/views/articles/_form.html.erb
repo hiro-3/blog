@@ -2,12 +2,12 @@
 <div class="article-main text-center col-md-12 bg-white border border-dark">
   <%= form_for articles do |f| %>
    <div id="cover-img" class="form-group padding-top-15px relative" >
-     <% if articles.image? %>
-      <%= image_tag articles.image.url, class: "img-responsive, w-100", style:"padding: 15px;" %>
-     <% elsif %>
+     <% if articles.image.present? %>
+      <%= image_tag articles.image.url, class:"img-responsive, w-100", style:"padding: 15px;" %>
+     <% else %>
       <%= image_tag "gray-bg.jpg", class:"img-fluid" %>
-      <i class="fas fa-camera "></i>
      <% end %>
+     <i class="fas fa-camera "></i>
    </div>
      <%= f.file_field :image, class:"article_img"%>
     <script>
